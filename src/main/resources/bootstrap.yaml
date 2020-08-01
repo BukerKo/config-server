@@ -1,0 +1,16 @@
+spring:
+  profiles:
+    active: vault, git
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/Misha999777/configs
+        vault:
+          host: localhost
+          port: 8200
+          scheme: http
+          authentication: TOKEN
+          token: s.2l2BE9LpUQFiABcluCKTtVei
+          kv-version: 2
+
